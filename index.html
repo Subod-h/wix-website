@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
 
     <!-- ORIGINAL WEBSITE 
@@ -24,7 +25,7 @@
           <div class="row px-lg-3 me-lg-3">
             <div class="logo d-flex">
               <div class="col-lg-5">
-                <i class="fa-solid fa-person-digging py-2" style="font-size: 4em;"></i>
+                <i class="fa-solid fa-person-digging py-2"></i>
               </div>
 
               <div class="col-lg-7 pe-lg-5">
@@ -37,13 +38,19 @@
         </div>
 
         <div class="col-lg-9 bg-dark">
-          <nav class="navbar navbar-expand-sm navbar-sm-dark">
-            <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-sm-dark navbar-lg-dark">
+            <div class="container-fluid overlay">
 
-              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+              <!-- <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+              </button> -->
+              <div class="container1" onclick="myFunction(this)" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
               <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                   <li class="nav-item">
@@ -255,7 +262,7 @@
     </div>
 
 
-    <div id="section5" class="container-fluid" style="padding:10px 20px;">
+    <div id="section5" class="container-fluid" style="padding:10px 50px;">
 
       <div class="heading">
         <h1>CONTACT</h1>
@@ -315,11 +322,11 @@
               </div>
               <div class="mb-3">
                 <label for="pwd" class="form-label">Subject:</label>
-                <input type="password" class="form-control bg-body-secondary" required>
+                <input class="form-control bg-body-secondary" required>
               </div>
               <div class="mb-3">
                 <label for="pwd" class="form-label">Message:</label>
-                <input type="text" class="form-control bg-body-secondary" required>
+                <textarea class="form-control bg-body-secondary" rows="3"></textarea>
               </div>
               <button type="submit" class="btn btn-dark float-end">Submit</button>
 
@@ -328,7 +335,7 @@
           </div>
 
           <div class="col-lg-4 ms-lg-5">
-            <h3>Employment</h3>
+            <h3 class="emp">Employment</h3class>
             <p class="m1 c-t">To apply for a job with Sphere Constuctions, please send a cover letter together with
               your C.V. to: info@mysite.com</p>
             <div class="hr1" style="float: inline-start;"></div>
@@ -369,6 +376,12 @@
     </footer>
 
     </div>
+
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+      </script>
 
   </body>
 

@@ -8,6 +8,10 @@
   height: auto;
 }
 
+.logo i {
+  font-size: 4rem;
+}
+
 .nav-link {
   color: white;
 }
@@ -45,7 +49,7 @@ video {
   background-image: url("./images/cons.jpg");
 
   /* Full height */
-  height: 100%;
+  height: 100vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -54,6 +58,9 @@ video {
   background-size: cover;
 }
 
+.nav-link.active {
+  color: rgb(237, 205, 31) !important;
+}
 
 
 .heading {
@@ -87,7 +94,6 @@ h3 {
 
 .btn {
   color: rgb(237, 205, 31);
-
 }
 
 .image {
@@ -147,30 +153,94 @@ h3 {
 }
 
 
-@media (min-width:319px) and (max-width:426px) {
+@media (min-width:320px) and (max-width:426px) {
   * {
     margin: 0;
     padding: 0;
   }
 
-
   .logo {
     display: flex !important;
     flex-direction: row;
-      justify-content: center;
-      align-items: center;
+    justify-content: left;
+    align-items: center;
+    margin-left: 3rem;
+    font-size: 1.1rem;
+    padding: 1rem;
   }
 
+  .logo i {
+    font-size: 4rem;
+    padding: 1rem;
+  }
+
+  #collapsibleNavbar {
+    height: 300vh;
+    background-color: black;
+  }
+
+  .overlay {
+    transition: 6.5s;
+  }
+
+  .container1 {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -6.5rem;
+    left: 39rem;
+    top: 2.2rem;
+  }
+
+  /* #collapsibleNavbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  } */
+
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  #section1,
+  #section2,
+  #section3,
+  #section4 {
+    width: 42.6rem;
+  }
 
   #section1 {
-    margin: 7rem .1em;
-    width: 100%;
-
+    margin: 4rem .1em;
     background-image: url("./images/cons.jpg");
-
+    width: 44.8rem;
     /* Full height */
     height: 130vh;
-    width: 42.6rem;
     /* Create the parallax scrolling effect */
     background-attachment: scroll;
     background-position: center;
@@ -186,7 +256,7 @@ h3 {
   }
 
   #section2 {
-    width: 42.6rem;
+    width: 44.9rem;
     margin-top: -7rem;
     padding: 0 1em;
   }
@@ -228,7 +298,7 @@ h3 {
   #section3 {
     height: 150vh;
     margin-top: -4rem;
-    width: 42.6rem;
+    width: 44.9rem;
 
   }
 
@@ -245,9 +315,9 @@ h3 {
 
   #section3 .about {
     position: absolute;
-    top: 221.4rem;
+    top: 214rem;
     left: 0;
-    width: 42.6rem;
+    width: 44.9rem;
     height: 25rem;
   }
 
@@ -262,10 +332,9 @@ h3 {
   }
 
   #section5 {
-    width: 42.6rem;
     margin-top: -6rem;
-    padding: 1rem 1em;
-
+    padding: 1rem 0rem 1rem;
+    width: 42rem;
   }
 
   #section5 .heading {
@@ -280,10 +349,9 @@ h3 {
     font-size: 1.3rem;
   }
 
-
-
   form {
     font-size: 1.2rem;
+    margin-top: -1rem;
   }
 
   input {
@@ -312,4 +380,191 @@ h3 {
     font-size: 1.5rem;
   }
 
+}
+
+@media (min-width:426px) and (max-width:769px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-left: 3rem;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .logo i {
+    font-size: 4rem;
+    padding: 1rem;
+  }
+
+  /* #collapsibleNavbar{
+    height: 300vh;
+    background-color: black;
+  } */
+
+  .container1 {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -6.5rem;
+    left: 47rem;
+    top: 2.2rem;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+ 
+
+  #section1 {
+    margin: 4rem .1em;
+    background-image: url("./images/cons.jpg");
+    width: 53.8rem;
+    /* Full height */
+    height: 100vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .sec-text {
+    width: 90%;
+    margin-left: 3rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #section2 {
+    width: 53.8rem;
+    margin-top: -5rem;
+    padding: 0 1em;
+  }
+
+  .card {
+    margin: 1rem 1.4rem;
+    font-size: 1.3em;
+    font-weight: lighter;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 0rem;
+  }
+
+
+  .m1 {
+    font-family: Helvetica, sans-serif;
+    font-size: large;
+    font-weight: lighter;
+  }
+
+
+  #section3 {
+    height: 150vh;
+    margin-top: -4rem;
+    width: 53.8rem;
+
+  }
+
+  #section3 .small-about {
+    position: relative;
+    top: 26rem;
+  }
+
+  .para {
+    margin-top: .1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+  }
+
+  #section3 .about {
+    position: relative;
+    top: -31.4rem;
+    left: -1.3rem;
+    width: 53.9rem;
+    height: 29rem;
+  }
+
+
+  #section4 {
+    width: 53.6rem;
+    margin-top: -2rem;
+    padding: 1rem 1em;
+  }
+
+  .image {
+    margin-left: .6rem;
+  }
+
+  #section5 {
+    margin-top: -6rem;
+    padding: 1rem 0rem 1rem;
+    width: 51rem;
+  }
+
+  #section5 .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .c-t {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+  }
+
+  form {
+    font-size: 1.2rem;
+    margin-top: -1rem;
+    width: 47rem;
+  }
+
+  .qt {
+    margin: 1rem -3rem;
+  }
+
+  .container {
+    margin-left: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .ft-icons {
+    float: end;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-left: 2.1rem;
+  }
+
+  .emp{
+    margin-top: 2rem;
+  }
 }
